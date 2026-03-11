@@ -688,5 +688,8 @@ toast((t) => (
 
 ---
 
-26  
-**Frontend Version:** 1.0.0
+## 👤 Author
+
+**Dylan Lewis**
+- GitHub: [dylanlewis12](https://github.com/dylanlewis12)
+- LinkedIn: [dylanlewis12](https://linkedin.com/in/the-dylanlewis/)
