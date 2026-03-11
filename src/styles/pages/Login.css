@@ -1,0 +1,305 @@
+/* Login Container - Full page layout */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+/* Login Pane - Left (Logo) */
+.login-pane {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.login-pane--left {
+  flex: 0 0 50%;
+}
+
+.login-pane--left img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  width: 400px;
+  height: auto;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  border: none !important;
+}
+
+/* Register Divider */
+.login-divider {
+  width: 0;
+  background-color: transparent;
+  border-left: 2px solid #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Register Pane - Right (Form) */
+.login-pane--right {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+}
+
+.login-pane--right h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Form groups */
+.login-pane--right > div {
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.login-pane--right label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Input fields */
+.login-pane--right input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  background: white;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.login-pane--right input:focus {
+  outline: none;
+  border-color: #4a9d6f;
+  box-shadow: 0 0 0 3px rgba(74, 157, 111, 0.1);
+}
+
+.login-pane--right input::placeholder {
+  color: #999999;
+}
+
+/* Autofill override */
+.login-pane--right input:-webkit-autofill,
+.login-pane--right input:-webkit-autofill:hover,
+.login-pane--right input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #1a1a1a !important;
+}
+
+/* Email input container */
+.login-email-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Username input container */
+.login-username-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Password input container */
+.login-password-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-password-container input {
+  width: 100%;
+  padding: 12px 14px;
+  padding-right: 45px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  background: white;
+  font-family: inherit;
+  line-height: 1.5;
+  height: 44px;
+}
+
+/* Password toggle button */
+.login-password-toggle {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+  color: #666666 !important;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none !important;
+  width: auto;
+  height: 44px;
+}
+
+.login-password-toggle:hover {
+  background: none !important;
+  color: #666666 !important;
+}
+
+.login-password-toggle:active {
+  background: none !important;
+  color: #666666 !important;
+}
+
+/* Submit button */
+.login-submit-btn {
+  width: 100%;
+  max-width: 480px;
+  padding: 14px;
+  margin-top: 20px;
+  background-color: #169928;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  letter-spacing: 0.5px;
+}
+
+.login-submit-btn:hover:not(:disabled) {
+  background-color: #3d7d5a;
+  transform: translateY(-2px);
+}
+
+.login-submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.login-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Login link container */
+.login-register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666666;
+  width: 100%;
+  max-width: 480px;
+}
+
+.login-register-link a {
+  color: #4a9d6f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.login-register-link a:hover {
+  color: #3d7d5a;
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.login-error-message {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 8px;
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .login-divider {
+    display: none;
+  }
+
+  .login-pane--left {
+    flex: 0 0 auto;
+    min-height: 200px;
+  }
+
+  .login-pane--left img {
+    width: 250px;
+  }
+
+  .login-pane--right {
+    flex: 1;
+    min-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+
+  .login-pane--right h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-pane--left {
+    min-height: 150px;
+  }
+
+  .login-pane--left img {
+    width: 200px;
+  }
+
+  .login-pane--right {
+    padding: 20px;
+    min-height: calc(100vh - 150px);
+  }
+
+  .login-pane--right h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .login-pane--right input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .login-submit-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
