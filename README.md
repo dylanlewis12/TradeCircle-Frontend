@@ -2,6 +2,12 @@
 
 Comprehensive documentation for the TradeCircle React + TypeScript frontend application. This guide covers architecture, component structure, state management, styling, and development practices.
 
+## Other Repositories
+Main Repository: https://github.com/dylanlewis12/TradeCircle-Platform <br />
+Frontend Repository: https://github.com/dylanlewis12/TradeCircle-Frontend <br />
+BackendRepository: https://github.com/dylanlewis12/TradeCircle-Backend <br />
+
+
 ---
 
 ## 🚀 Project Setup
